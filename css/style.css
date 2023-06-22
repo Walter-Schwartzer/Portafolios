@@ -7,7 +7,11 @@
 a {
   text-decoration: none;
   cursor: pointer;
-  color: #000; }
+  color: #000;
+  font-size: 19px; }
+
+p {
+  font-size: 21px; }
 
 button {
   width: 150px;
@@ -17,6 +21,8 @@ button {
   color: #fff;
   border: #fff 1px solid;
   cursor: pointer; }
+  button:hover {
+    opacity: 0.9; }
 
 header {
   padding: 25px;
@@ -41,77 +47,83 @@ header {
           transition: .1s all;
           border-bottom: 3px solid #ffffffc0; }
 
-main article h3 {
-  text-decoration: underline; }
-main .ctn-about-me {
-  justify-content: center;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  flex-direction: column; }
-  main .ctn-about-me h1 {
-    margin-bottom: 40px;
-    text-align: center; }
-    main .ctn-about-me h1 span {
-      color: #5966ef; }
-  main .ctn-about-me .btn-certificate {
-    margin-top: 30px;
-    width: 200px; }
-main .ctn-about-img {
-  align-items: end;
-  display: flex;
-  justify-content: end; }
-  main .ctn-about-img img {
-    width: 400px;
-    height: 400px; }
-main .ctn-tecnologia {
-  margin: 30px 0; }
-  main .ctn-tecnologia h2 {
+.ctn-about {
+  margin: 150px 0; }
+  .ctn-about .ctn-about-me {
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column; }
+    .ctn-about .ctn-about-me h1 {
+      margin-bottom: 40px;
+      text-align: center; }
+      .ctn-about .ctn-about-me h1 span {
+        color: #5966ef; }
+    .ctn-about .ctn-about-me .btn-certificate {
+      margin-top: 30px;
+      width: 200px; }
+  .ctn-about .ctn-about-img {
+    align-items: end;
+    display: flex;
+    justify-content: end; }
+    .ctn-about .ctn-about-img img {
+      width: 400px;
+      height: 400px; }
+
+.ctn-tecnologia {
+  margin: 150px 0; }
+  .ctn-tecnologia h2 {
     margin-bottom: 30px; }
-  main .ctn-tecnologia .ctn-icon-tecnologias {
+  .ctn-tecnologia .ctn-icon-tecnologias {
     display: flex;
     gap: 15px;
     margin-bottom: 20px;
     padding: 10px; }
-    main .ctn-tecnologia .ctn-icon-tecnologias img {
+    .ctn-tecnologia .ctn-icon-tecnologias img {
       width: 80px; }
-main .ctn-proyectos h2 {
-  text-align: center;
-  font-size: 3rem;
-  margin-top: 40px;
-  margin-bottom: 100px;
-  padding: 20px;
-  border-bottom: 2px solid #000; }
-  main .ctn-proyectos h2 .ctn-span-proyect:hover {
-    color: #4754deab; }
-  main .ctn-proyectos h2 .ctn-span-certi {
-    color: #0313bdd3; }
-    main .ctn-proyectos h2 .ctn-span-certi:hover {
-      color: #212529; }
-main .ctn-proyectos .ctn-article-proyect {
-  margin-bottom: 100px;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
-  height: 400px; }
-  main .ctn-proyectos .ctn-article-proyect .ctn-proyecto-img {
-    display: flex;
-    flex-direction: column;
-    justify-content: center; }
-    main .ctn-proyectos .ctn-article-proyect .ctn-proyecto-img img {
-      width: 650px;
-      height: 326px;
-      border-radius: 10px;
-      border: 1px solid #000; }
-  main .ctn-proyectos .ctn-article-proyect .ctn-proyecto-info {
+
+.ctn-proyectos {
+  margin: 150px 0; }
+  .ctn-proyectos h2 {
     text-align: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    padding: 20px; }
-    main .ctn-proyectos .ctn-article-proyect .ctn-proyecto-info h3 {
-      margin-bottom: 15px; }
-    main .ctn-proyectos .ctn-article-proyect .ctn-proyecto-info p {
-      margin-bottom: 20px; }
+    font-size: 3rem;
+    margin-top: 40px;
+    margin-bottom: 100px;
+    text-decoration: underline;
+    padding: 20px;
+    border-bottom: 2px solid #000; }
+    .ctn-proyectos h2 .ctn-span-proyect:hover {
+      color: #4754deab; }
+    .ctn-proyectos h2 .ctn-span-certi {
+      color: #0313bdd3; }
+      .ctn-proyectos h2 .ctn-span-certi:hover {
+        color: #212529; }
+  .ctn-proyectos .ctn-article-proyect {
+    margin-bottom: 100px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    height: 450px; }
+    .ctn-proyectos .ctn-article-proyect .ctn-proyecto-img {
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .ctn-proyectos .ctn-article-proyect .ctn-proyecto-img img {
+        width: auto;
+        height: auto;
+        border-radius: 10px;
+        border: 1px solid #000; }
+    .ctn-proyectos .ctn-article-proyect .ctn-proyecto-info {
+      text-align: center;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      padding: 20px; }
+      .ctn-proyectos .ctn-article-proyect .ctn-proyecto-info h3 {
+        margin-bottom: 15px;
+        text-decoration: underline; }
+      .ctn-proyectos .ctn-article-proyect .ctn-proyecto-info p {
+        margin-bottom: 20px; }
 
 .ctn-contact h2 {
   text-align: center;
@@ -149,8 +161,7 @@ main .ctn-proyectos .ctn-article-proyect {
     font-size: 21px;
     border: none; }
     .ctn-contact .ctn-contact-form .btn-submit:hover {
-      background-color: #2833aeed;
-      transition: all .1s; }
+      opacity: 0.9; }
 
 footer {
   text-align: center;
@@ -186,7 +197,9 @@ footer {
         opacity: 0.8; }
       footer .cont-general-footer .cont-footer .p-email {
         font-size: 1.1rem;
-        color: #000; }
+        color: #000;
+        margin-top: 10px;
+        font-weight: 600; }
   footer .cont-copy {
     border-top: 0.1px solid #000;
     margin-top: 10px; }
@@ -199,24 +212,43 @@ footer {
     .ctn-nav .ctn-navbar {
       justify-content: space-evenly; }
 
+  .ctn-about .ctn-about-me p {
+    font-size: 19px;
+    padding-right: 20px; }
+  .ctn-about .ctn-about-me .ctn-btn-about {
+    display: flex;
+    z-index: 100; }
+  .ctn-about .ctn-about-img {
+    align-items: center; }
+    .ctn-about .ctn-about-img img {
+      width: 350px;
+      height: 350px; }
+
+  .ctn-tecnologia .ctn-icon-tecnologias {
+    display: flex;
+    flex-wrap: wrap; }
+
+  .ctn-proyectos .ctn-article-proyect .ctn-proyecto-info p {
+    font-size: 19px; }
+
   .ctn-contact .ctn-contact-form input {
     width: 700px; }
   .ctn-contact .ctn-contact-form textarea {
     width: 700px; } }
 @media screen and (max-width: 800px) {
-  article .ctn-proyecto-img img {
-    width: 550px; }
+  .ctn-about .ctn-about-img {
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px; }
+
+  .ctn-proyectos .ctn-article-proyect {
+    height: 700px; }
 
   .ctn-contact .ctn-contact-form input {
     width: 550px; }
   .ctn-contact .ctn-contact-form textarea {
     width: 550px; } }
 @media screen and (max-width: 600px) {
-  article .ctn-proyecto-img img {
-    display: flex;
-    margin: auto;
-    width: 450px; }
-
   .ctn-contact .ctn-contact-form input {
     width: 450px; }
   .ctn-contact .ctn-contact-form textarea {
@@ -225,22 +257,47 @@ footer {
   header nav .ctn-navbar a {
     font-size: 1.2em; }
 
-  article .ctn-proyecto-img img {
-    display: flex;
-    margin: auto;
-    width: 350px; }
+  .ctn-about .ctn-about-me .ctn-btn-about a {
+    font-size: 17px; }
+  .ctn-about .ctn-about-me .ctn-btn-about button {
+    width: 180px; }
+  .ctn-about .ctn-about-img img {
+    width: 300px;
+    height: 300px; }
 
   .ctn-contact .ctn-contact-form input {
     width: 350px; }
   .ctn-contact .ctn-contact-form textarea {
-    width: 350px; } }
+    width: 350px; }
+
+  footer .cont-general-footer .cont-footer .p-email {
+    font-size: 16px; } }
 @media screen and (max-width: 360px) {
+  .ctn-nav .ctn-navbar a {
+    font-size: 1.1rem; }
+
+  .ctn-about .ctn-about-me .ctn-btn-about a {
+    font-size: 16px; }
+  .ctn-about .ctn-about-me .ctn-btn-about button {
+    width: 170px; }
+  .ctn-about .ctn-about-img img {
+    width: 300px;
+    height: 300px; }
+
   article .ctn-proyecto-img img {
     display: none; }
 
   .ctn-contact .ctn-contact-form input {
     width: 300px; }
   .ctn-contact .ctn-contact-form textarea {
-    width: 300px; } }
+    width: 300px; }
+
+  footer .cont-general-footer .cont-footer {
+    padding: 20px; }
+    footer .cont-general-footer .cont-footer .p-email {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 16px; } }
 
 /*# sourceMappingURL=style.css.map */

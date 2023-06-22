@@ -11,9 +11,12 @@ a{
     text-decoration: none;
     cursor: pointer;
     color: #000;
+    font-size: 19px;
 }
 
-
+p{
+    font-size: 21px;
+}
 
 button{
     width: 150px;
@@ -23,6 +26,9 @@ button{
     color: #fff;
     border: #fff 1px solid;
     cursor: pointer;
+    &:hover{
+        opacity: 0.9;
+    }
 }
 
 header{
@@ -55,41 +61,41 @@ header{
     }
 }
 
-main{
-    article{
-        h3{
-            text-decoration: underline;
-        }
-    }
-    .ctn-about-me{
-        justify-content: center;
-        display: flex;
-        text-align: center;
-        align-items: center;
-        flex-direction: column;
-        h1{
-            margin-bottom: 40px;
+///////////////////////////////////
+/// MAIN
+
+    .ctn-about{
+        margin: 150px 0;
+        .ctn-about-me{
+            justify-content: center;
+            display: flex;
             text-align: center;
-            span{
-                color: #5966ef;
+            align-items: center;
+            flex-direction: column;
+            h1{
+                margin-bottom: 40px;
+                text-align: center;
+                span{
+                    color: #5966ef;
+                }
+            }
+            .btn-certificate{
+                margin-top: 30px;
+                width: 200px;
             }
         }
-        .btn-certificate{
-            margin-top: 30px;
-            width: 200px;
-        }
-    }
-    .ctn-about-img{
-        align-items: end;
-        display: flex;
-        justify-content: end;
-        img{
-            width: 400px;
-            height: 400px;
+        .ctn-about-img{
+            align-items: end;
+            display: flex;
+            justify-content: end;
+            img{
+                width: 400px;
+                height: 400px;
+            }
         }
     }
     .ctn-tecnologia{
-        margin: 30px 0;
+        margin: 150px 0;
         h2{
             margin-bottom: 30px;
         }
@@ -104,11 +110,13 @@ main{
         }
     }
     .ctn-proyectos{
+        margin: 150px 0;
         h2{
             text-align: center;
             font-size: 3rem;
             margin-top: 40px;
             margin-bottom: 100px;
+            text-decoration: underline;
             padding: 20px;
             border-bottom: 2px solid #000;
             .ctn-span-proyect{
@@ -127,14 +135,14 @@ main{
             margin-bottom: 100px;
             border-top: 1px solid #000;
             border-bottom: 1px solid #000;
-            height: 400px;
+            height: 450px;
             .ctn-proyecto-img{
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 img{
-                    width: 650px;
-                    height: 326px;
+                    width: auto;
+                    height: auto;
                     border-radius: 10px;
                     border: 1px solid #000;
                 }
@@ -147,6 +155,7 @@ main{
                 padding: 20px;
                 h3{
                     margin-bottom: 15px;
+                    text-decoration: underline;
                 }
                 p{
                     margin-bottom: 20px;
@@ -154,7 +163,6 @@ main{
             }
         }
     }
-}
 
 //////////////////////////
 /// Contact Form
@@ -199,8 +207,7 @@ main{
             font-size: 21px;
             border: none;
             &:hover{
-                background-color: #2833aeed;
-                transition: all .1s;
+                opacity: 0.9;
             }
         }
     }
@@ -251,6 +258,8 @@ footer{
             .p-email{
                 font-size: 1.1rem;
                 color: #000;
+                margin-top: 10px;
+                font-weight: 600;
             }
         }
     }
@@ -274,6 +283,40 @@ footer{
             justify-content: space-evenly;
         }
     }
+    .ctn-about{
+        .ctn-about-me{
+            p{
+                font-size: 19px;
+                padding-right: 20px;
+            }
+            .ctn-btn-about{
+                display: flex;
+                z-index: 100;
+            }
+        }
+        .ctn-about-img{
+            align-items: center;
+            img{
+                width: 350px;
+                height: 350px;
+            }
+        }
+    }
+    .ctn-tecnologia{
+        .ctn-icon-tecnologias{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    }
+    .ctn-proyectos{
+        .ctn-article-proyect{
+            .ctn-proyecto-info{
+                p{
+                    font-size: 19px;
+                }
+            }
+        }
+    }
     .ctn-contact{
         .ctn-contact-form{
             input{
@@ -287,11 +330,16 @@ footer{
 }
 
 @media screen and (max-width: 800px){
-    article{
-        .ctn-proyecto-img{
-            img{
-                width: 550px;
-            }
+    .ctn-about{
+        .ctn-about-img{
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+        }
+    }
+    .ctn-proyectos{
+        .ctn-article-proyect{
+            height: 700px;
         }
     }
     .ctn-contact{
@@ -307,15 +355,6 @@ footer{
 }
 
 @media screen and (max-width: 600px){
-    article{
-        .ctn-proyecto-img{
-            img{
-                display: flex;
-                margin: auto;
-                width: 450px;
-            }
-        }
-    }
     .ctn-contact{
         .ctn-contact-form{
             input{
@@ -338,14 +377,23 @@ footer{
             }
         }
     }
-    article{
-        .ctn-proyecto-img{
-            img{
-                display: flex;
-                margin: auto;
-                width: 350px;
+    .ctn-about{
+        .ctn-about-me{
+            .ctn-btn-about{
+                a{
+                    font-size: 17px;
+                }
+                button{
+                    width: 180px;
+                }
             }
         }
+    .ctn-about-img{
+        img{
+            width: 300px;
+            height: 300px;
+        }
+    }
     }
     .ctn-contact{
         .ctn-contact-form{
@@ -357,9 +405,43 @@ footer{
             }
         }
     }
+    footer{
+        .cont-general-footer{
+            .cont-footer{
+                .p-email{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 360px){
+    .ctn-nav{
+        .ctn-navbar{
+            a{
+                font-size: 1.1rem;
+            }
+        }
+    }
+    .ctn-about{
+        .ctn-about-me{
+            .ctn-btn-about{
+                a{
+                    font-size: 16px;
+                }
+                button{
+                    width: 170px;
+                }
+            }
+        }
+        .ctn-about-img{
+            img{
+                width: 300px;
+                height: 300px;
+            }
+        }   
+    }
     article{
         .ctn-proyecto-img{
             img{
@@ -374,6 +456,19 @@ footer{
             }
             textarea{
                 width: 300px;
+            }
+        }
+    }
+        footer{
+        .cont-general-footer{
+            .cont-footer{
+                padding: 20px;
+                .p-email{
+                    display: flex;
+                    align-items: center;
+                    gap: 6px;
+                    font-size: 16px;
+                }
             }
         }
     }
