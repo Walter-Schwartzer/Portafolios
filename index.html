@@ -17,7 +17,7 @@
             <div class="ctn-navbar">
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
-                <a href="#proyects">Proyects</a>
+                <a href="#proyects">Projects</a>
                 <a href="#contacto">Contact</a>
             </div>
         </nav>
@@ -25,11 +25,15 @@
     <main class="container">
         <section id="about" class="ctn-about row">
             <article class="col-md-6 col-12 ctn-about-me">
+                <p><span class="span-about">Hi</span> my name is</p>
                 <h1>WALTER <span>SCHWARTZER</span></h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facilis esse molestias aliquid ratione perferendis eligendi fugiat sequi cupiditate exercitationem illo pariatur repellat assumenda explicabo dicta, at incidunt similique iusto?</p>
+                <div class="ctn-description">
+                    <h3>FRONTEND DEVELOPER REACT</h3>
+                    <p>I´m a frontend developer specialized in ReactJS and a Fullstack student. I am currently developing personal projects.</p>
+                </div>
                 <div class="ctn-btn-about">
-                    <a href="#"><button class="btn-certificate">Certificado completo</button></a>
-                    <a href="./cv.pdf"><button class="btn-certificate">Descargar cv</button></a>
+                    <a href="#"><button class="btn-certificate">Complete certificate</button></a>
+                    <a href="./cv.pdf"><button class="btn-certificate">download cv</button></a>
                 </div>
             </article>
             <article class="ctn-about-img col-md-6 col-12">
@@ -39,7 +43,7 @@
         <hr>
         <section class="row">
             <article id="skills" class="ctn-tecnologia">
-                <h2>Habilidades</h2>
+                <h2>Skills</h2>
                 <div class="ctn-icon-tecnologias">
                     <img src="./multimedia/img/html-1.svg" alt="HTML">
                     <img src="./multimedia/img/css-3.svg" alt="CSS">
@@ -56,7 +60,7 @@
         <hr>
         <section id="proyects" class="ctn-proyectos">
             <div>
-                <h2> <span class="ctn-span-proyect">Proyectos</span> y <span class="ctn-span-certi">certificados</span></h2>
+                <h2> <span class="ctn-span-proyect">Projects</span> and <span class="ctn-span-certi">Certificates</span></h2>
                 <article class="row ctn-article-proyect">
                     <div class="col-md-6 col-12 ctn-proyecto-info">
                         <h3>GamingEx</h3>
@@ -100,27 +104,29 @@
         </section>
         <hr>
         <section id="contacto" class="ctn-contact">
-            <h2>Contacto</h2>
-            <form action="" method="post" class="ctn-contact-form">
-                <input type="text" placeholder="Nombre y apellido">
-                <input type="email" placeholder="Ingrese su mail">
-                <textarea name="propuesta" placeholder="Ingrese su consulta aquí" id="" cols="30" rows="10"></textarea>
-                <input type="submit" class="btn-submit" placeholder="Enviar"></input>
+            <h2>Contact</h2>
+            <form action="https://getform.io/f/9e56555a-45a5-4fc2-afc5-d7d4bb8b2048" method="post"  class="ctn-contact-form">
+                <input type="text" name="name and last name" placeholder="Name and last name" required>
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <textarea name="propuesta" name="consult" placeholder="Enter your consult here" cols="30" rows="10" required></textarea>
+                <input id="btn-submit" class="btn-submit" type="submit">
             </form>
         </section>
     </main>
     <footer>
         <div class="cont-general-footer">
             <div class="cont-footer contacto">
-                <h3>Redes Sociales</h3>
+                <h3>Social networks</h3>
                 <ul><i class="fa-brands fa-github ctn-icon"></i><a href="https://github.com/Walter-Schwartzer" target="_blank"> GitHub</a></ul>
                 <ul><i class="fa-brands fa-linkedin ctn-icon"></i><a href="https://www.linkedin.com/in/walter-schwartzer-83b00924a/" target="_blank"> linkedin</a></ul>
                 <ul class="p-email"><i class="fa-regular fa-envelope ctn-icon"></i> walterschwartzer@hotmail.com</ul>
             </div>
         </div>
         <div class="cont-copy">
-            <p> Todos los derechos reservados © 2023 <b> Walter Schwartzer</b> </p>
+            <p> All rights reserved © <span id="copy"></span> <b> Walter Schwartzer</b> </p>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./script/main.js"></script>
 </body>
 </html>

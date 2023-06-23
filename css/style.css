@@ -55,18 +55,28 @@ header {
     text-align: center;
     align-items: center;
     flex-direction: column; }
+    .ctn-about .ctn-about-me .span-about {
+      color: #2833ae;
+      font-weight: 600;
+      font-size: 2rem; }
     .ctn-about .ctn-about-me h1 {
       margin-bottom: 40px;
-      text-align: center; }
+      text-align: start; }
       .ctn-about .ctn-about-me h1 span {
         color: #5966ef; }
+    .ctn-about .ctn-about-me p {
+      margin: 0; }
+    .ctn-about .ctn-about-me .ctn-description {
+      width: 430px;
+      margin-left: 20px;
+      text-align: start; }
     .ctn-about .ctn-about-me .btn-certificate {
       margin-top: 30px;
       width: 200px; }
   .ctn-about .ctn-about-img {
     align-items: end;
     display: flex;
-    justify-content: end; }
+    justify-content: center; }
     .ctn-about .ctn-about-img img {
       width: 400px;
       height: 400px; }
@@ -212,6 +222,9 @@ footer {
     .ctn-nav .ctn-navbar {
       justify-content: space-evenly; }
 
+  .ctn-about .ctn-about-me h1 {
+    display: flex;
+    gap: 10px; }
   .ctn-about .ctn-about-me p {
     font-size: 19px;
     padding-right: 20px; }
@@ -219,7 +232,8 @@ footer {
     display: flex;
     z-index: 100; }
   .ctn-about .ctn-about-img {
-    align-items: center; }
+    align-items: center;
+    justify-content: start; }
     .ctn-about .ctn-about-img img {
       width: 350px;
       height: 350px; }
@@ -257,6 +271,8 @@ footer {
   header nav .ctn-navbar a {
     font-size: 1.2em; }
 
+  .ctn-about .ctn-about-me .ctn-description {
+    width: auto; }
   .ctn-about .ctn-about-me .ctn-btn-about a {
     font-size: 17px; }
   .ctn-about .ctn-about-me .ctn-btn-about button {
@@ -276,6 +292,8 @@ footer {
   .ctn-nav .ctn-navbar a {
     font-size: 1.1rem; }
 
+  .ctn-about .ctn-about-me .ctn-description {
+    margin: 0; }
   .ctn-about .ctn-about-me .ctn-btn-about a {
     font-size: 16px; }
   .ctn-about .ctn-about-me .ctn-btn-about button {

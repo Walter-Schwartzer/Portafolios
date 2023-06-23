@@ -72,12 +72,25 @@ header{
             text-align: center;
             align-items: center;
             flex-direction: column;
+            .span-about{
+                color: #2833ae;
+                font-weight: 600;
+                font-size: 2rem;
+            }
             h1{
                 margin-bottom: 40px;
-                text-align: center;
+                text-align: start;
                 span{
                     color: #5966ef;
                 }
+            }
+            p{
+                margin: 0;
+            }
+            .ctn-description{
+                width: 430px;
+                margin-left: 20px;
+                text-align: start;
             }
             .btn-certificate{
                 margin-top: 30px;
@@ -87,7 +100,7 @@ header{
         .ctn-about-img{
             align-items: end;
             display: flex;
-            justify-content: end;
+            justify-content: center;
             img{
                 width: 400px;
                 height: 400px;
@@ -285,6 +298,10 @@ footer{
     }
     .ctn-about{
         .ctn-about-me{
+            h1{
+                display: flex;
+                gap: 10px;
+            }
             p{
                 font-size: 19px;
                 padding-right: 20px;
@@ -296,6 +313,7 @@ footer{
         }
         .ctn-about-img{
             align-items: center;
+            justify-content: start;
             img{
                 width: 350px;
                 height: 350px;
@@ -379,6 +397,9 @@ footer{
     }
     .ctn-about{
         .ctn-about-me{
+            .ctn-description{
+                width: auto;
+            }
             .ctn-btn-about{
                 a{
                     font-size: 17px;
@@ -426,6 +447,9 @@ footer{
     }
     .ctn-about{
         .ctn-about-me{
+            .ctn-description{
+                margin: 0;
+            }
             .ctn-btn-about{
                 a{
                     font-size: 16px;
