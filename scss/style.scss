@@ -64,6 +64,52 @@ header{
 ///////////////////////////////////
 /// MAIN
 
+    .language{
+        display: flex;
+        text-align: center;
+        gap: 5px;
+        margin: 15px 20px;
+        position: fixed;
+        right: 2px;
+        bottom: 2px;
+        .en{
+            color: #333;
+        }
+        .es{
+            color: #00a1ff;
+        }
+        .check{
+            position: relative;
+            width: 50px;
+            cursor: pointer;
+            &::before{
+                content: ' ';
+                position: absolute;
+                width: 50px;
+                height: 25px;
+                background-color: #333;
+                border-radius: 25px;
+            }
+            &::after{
+                content: ' ';
+                position: absolute;
+                width: 25px;
+                height: 25px;
+                background-color: #fff;
+                border-radius: 25px;
+                transition: 0.25s;
+                border: 2px solid #333;
+                box-sizing: border-box;
+            }
+            &:checked::after{
+                left: 25px;
+                border: 2px solid #00a1ff;
+            }
+            &:checked::before{
+                background-color: #00a1ff;
+            }
+        }
+    }
     .ctn-about{
         margin: 150px 0;
         .ctn-about-me{
@@ -372,6 +418,14 @@ footer{
     }
 }
 
+@media screen and (max-width: 750px){
+    .language{
+        display: block;
+        top: 130px;
+        position: absolute;
+    }
+}
+
 @media screen and (max-width: 600px){
     .ctn-contact{
         .ctn-contact-form{
@@ -389,6 +443,9 @@ footer{
     header{
         nav{
             .ctn-navbar{
+                .a-es{
+                    font-size: 1em;
+                }
                 a{
                     font-size: 1.2em;
                 }

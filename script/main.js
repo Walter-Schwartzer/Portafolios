@@ -20,3 +20,13 @@ const send = () =>{
 
 send();
 
+
+
+let check = document.getElementById(`check`);
+
+check.addEventListener(`click`, ()=>{
+    let id = check.checked;
+    console.log(check.checked);
+    id ? location.href = `../es/index.html` : location.href = `../index.html`;
+
+});

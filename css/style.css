@@ -47,6 +47,45 @@ header {
           transition: .1s all;
           border-bottom: 3px solid #ffffffc0; }
 
+.language {
+  display: flex;
+  text-align: center;
+  gap: 5px;
+  margin: 15px 20px;
+  position: fixed;
+  right: 2px;
+  bottom: 2px; }
+  .language .en {
+    color: #333; }
+  .language .es {
+    color: #00a1ff; }
+  .language .check {
+    position: relative;
+    width: 50px;
+    cursor: pointer; }
+    .language .check::before {
+      content: ' ';
+      position: absolute;
+      width: 50px;
+      height: 25px;
+      background-color: #333;
+      border-radius: 25px; }
+    .language .check::after {
+      content: ' ';
+      position: absolute;
+      width: 25px;
+      height: 25px;
+      background-color: #fff;
+      border-radius: 25px;
+      transition: 0.25s;
+      border: 2px solid #333;
+      box-sizing: border-box; }
+    .language .check:checked::after {
+      left: 25px;
+      border: 2px solid #00a1ff; }
+    .language .check:checked::before {
+      background-color: #00a1ff; }
+
 .ctn-about {
   margin: 150px 0; }
   .ctn-about .ctn-about-me {
@@ -262,12 +301,19 @@ footer {
     width: 550px; }
   .ctn-contact .ctn-contact-form textarea {
     width: 550px; } }
+@media screen and (max-width: 750px) {
+  .language {
+    display: block;
+    top: 130px;
+    position: absolute; } }
 @media screen and (max-width: 600px) {
   .ctn-contact .ctn-contact-form input {
     width: 450px; }
   .ctn-contact .ctn-contact-form textarea {
     width: 450px; } }
 @media screen and (max-width: 480px) {
+  header nav .ctn-navbar .a-es {
+    font-size: 1em; }
   header nav .ctn-navbar a {
     font-size: 1.2em; }
 
