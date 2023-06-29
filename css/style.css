@@ -132,6 +132,8 @@ body.active {
     color: #fff; }
   body.active h3 {
     color: #2f3fe396; }
+  body.active hr {
+    color: #fff; }
   body.active h2 {
     color: #fff; }
   body.active a {
@@ -140,6 +142,10 @@ body.active {
     color: #fff; }
   body.active .language .en {
     color: #fff; }
+  body.active .ctn-proyectos h2 {
+    border-color: #fff; }
+  body.active .ctn-proyectos .ctn-article-proyect {
+    border-color: #fff; }
   body.active footer .cont-general-footer h3 {
     color: #fff; }
   body.active footer .cont-general-footer .p-email {
@@ -194,7 +200,10 @@ body.active {
     margin-bottom: 20px;
     padding: 10px; }
     .ctn-tecnologia .ctn-icon-tecnologias img {
-      width: 80px; }
+      width: 80px;
+      height: 80px; }
+    .ctn-tecnologia .ctn-icon-tecnologias .img-git {
+      border-radius: 40px; }
 
 .ctn-proyectos {
   margin: 150px 0; }
