@@ -64,14 +64,76 @@ header{
 ///////////////////////////////////
 /// MAIN
 
-    .language{
+    .btn-options{
+        display: flex;
+        justify-content: center;
+        margin: 40px 0;
+        gap: 30px;
+        .ctn-dark-mode{
+            display: flex;
+            text-align: center;
+            gap: 5px;
+            margin: 15px 20px;
+            // position: relative;
+            // background-color: #f8f8f8;
+            // width: 80px;
+            // height: 40px;
+            // box-shadow: inset 4px 4px 6px #cecece,
+            //             inset -4px -4px 6px #fff;
+            // margin: 0 auto;
+            // margin-top: 50px;
+            // border-radius: 25px;
+            // cursor: pointer;
+            // .toggle{
+            //     position: absolute;
+            //     cursor: pointer;
+            //     top: 0;
+            //     left: 0;
+            //     width: 40px;
+            //     height: 40px;
+            //     transform: scale(.7);
+            //     background-color: linear-gradient (145deg, #d8d8d8, #fff);
+            //     border-radius: 25px;
+            //     box-shadow:  3px 3px 8px #c4c4c4,
+            //                 -3px -3px 8px #fff;
+            // }
+            .toggle{
+                position: relative;
+                width: 50px;
+                cursor: pointer;
+                &::before{
+                    content: ' ';
+                    position: absolute;
+                    width: 50px;
+                    height: 25px;
+                    background-color: #333;
+                    border-radius: 25px;
+                }
+                &::after{
+                    content: ' ';
+                    position: absolute;
+                    width: 25px;
+                    height: 25px;
+                    background-color: #fff;
+                    border-radius: 25px;
+                    transition: 0.25s;
+                    border: 2px solid #333;
+                    box-sizing: border-box;
+                }
+                &:checked::after{
+                    left: 25px;
+                    border: 2px solid #00a1ff;
+                }
+                &:checked::before{
+                    background-color: #fff;
+                }
+            }
+        }
+        .language{
         display: flex;
         text-align: center;
         gap: 5px;
         margin: 15px 20px;
-        position: fixed;
-        right: 2px;
-        bottom: 2px;
         .en{
             color: #333;
         }
@@ -107,6 +169,59 @@ header{
             }
             &:checked::before{
                 background-color: #00a1ff;
+            }
+        }
+    }
+    }
+    .active.toggle{
+        left: 40px;
+    }
+    body.active{
+        background-color: #292929;
+        header{
+            h3{
+                color: #fff;
+            }
+        }
+        .ctn-dark-mode{
+            span{
+                color: #fff;
+            }
+        }
+        h1{
+            color: #fff;
+        }
+        h3{
+            color: #2f3fe396;
+        }
+        h2{
+            color: #fff;
+        }
+        a{
+            color: #fff;
+        }
+        p{
+            color: #fff
+        };
+        .language{
+            .en{
+                color: #fff;
+            }
+        }
+        footer{
+            .cont-general-footer{
+                h3{
+                    color: #fff;
+                }
+                .p-email{
+                    color: #fff;
+                }
+                .fa-brands{
+                    color: #fff;
+                }
+            }
+            .cont-copy{
+                border-color: #fff;
             }
         }
     }
@@ -150,6 +265,7 @@ header{
             img{
                 width: 400px;
                 height: 400px;
+                border-radius: 196px;
             }
         }
     }
@@ -418,14 +534,6 @@ footer{
     }
 }
 
-@media screen and (max-width: 750px){
-    .language{
-        display: block;
-        top: 130px;
-        position: absolute;
-    }
-}
-
 @media screen and (max-width: 600px){
     .ctn-contact{
         .ctn-contact-form{
@@ -491,6 +599,12 @@ footer{
                 }
             }
         }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .btn-options{
+        gap: 0;
     }
 }
 

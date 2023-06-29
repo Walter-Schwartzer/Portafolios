@@ -30,3 +30,31 @@ check.addEventListener(`click`, ()=>{
     id ? location.href = `../es/index.html` : location.href = `../index.html`;
 
 });
+
+
+let toggle = document.getElementById(`darkMode`);
+
+let body = document.querySelector(`body`)
+
+toggle.addEventListener(`click`, () =>{
+    toggle.classList.toggle(`active`);
+    body.classList.toggle(`active`);
+})
+
+// const saveLocalStorage = () =>{
+//     sessionStorage.setItem("mode", JSON.stringify(toggle));
+// }
+
+// saveLocalStorage();
+
+// const obetenerLocalStorage = () =>{
+
+//     if ( sessionStorage.getItem("mode") ) {
+//         let mode = sessionStorage.getItem("mode");
+//         console.log(mode);
+//     } else{
+//         console.log("no");
+//     }
+// }
+
+// obetenerLocalStorage();
